@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
+// татимолкиокиомукиукомукимки
 
 @end
 
