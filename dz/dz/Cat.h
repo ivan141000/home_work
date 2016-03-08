@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Cat : NSObject
 
 @property (strong, nonatomic)NSString *name;
-@property (assign, nonatomic)NSInteger *age;
-@property (strong, nonatomic)NSNumber *weight;
+@property (assign, nonatomic)NSInteger age;
+@property (assign, nonatomic)CGFloat weight;
 @property (strong, nonatomic)NSNumber *height;
 @property(assign,nonatomic)BOOL *myCat;
 @property (assign,nonatomic)NSInteger queryCount;

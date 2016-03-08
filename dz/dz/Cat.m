@@ -23,7 +23,7 @@
     self = [super init];
     self.name = @"Tima";
     self.age = 2;
-    self.weight = [NSNumber numberWithDouble:7.5];
+    self.weight = 7.5f;
     self.height = [NSNumber numberWithDouble:2];
     return self;
 }
@@ -45,7 +45,7 @@
 {
     
     NSLog(@"function setter name called");
-    name = _name;
+    _name = name;
 }
 
 -(NSString *)name
@@ -56,24 +56,24 @@
     
 }
 
--(void)setAge:(NSInteger *)age
+-(void)setAge:(NSInteger)age
 {
     NSLog(@"function setter age called");
-    age = _age;
+    _age = age;
 }
 
--(NSInteger *)age
+-(NSInteger )age
 {
     NSLog(@"function getter age called");
     return _age;
 }
 
--(void) setWeight:(NSNumber *)weight
+-(void) setWeight:(CGFloat )weight
 {
     NSLog(@"function setter weight called");
     weight = _weight;
 }
--(NSNumber *)weight
+-(CGFloat )weight
 {
     NSLog(@"function getter weight called");
     return _weight;
