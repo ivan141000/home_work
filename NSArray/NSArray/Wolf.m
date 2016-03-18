@@ -11,4 +11,17 @@
 
 @implementation Wolf
 
+-(instancetype)init
+{
+    self = [super init];
+    self.levelOfAnger = 7;
+    self.dish = @"hare";
+    return self;
+}
+-(void)eatSomething:(NSString *)dish
+{
+    NSLog(@"Wolf eat: %@ ",self.dish);
+}
+
+
 @end

@@ -34,16 +34,22 @@
 //    NSLog(@"Cat eat %@",cat.dish);
 //    
     
-    NSArray *arrayAnimal = [[NSArray alloc]initWithObjects:chicken,cat,dog, nil];
-    for (int i = 0; i < [arrayAnimal count]; i++) {
-        Domestic_animal *eat = [arrayAnimal objectAtIndex:i];
-        NSLog(@"Domestic animals eat %@",eat.dish);
+    NSArray *arrayDomesticAnimal = [[NSArray alloc]initWithObjects:chicken,cat,dog, nil];
+    for (int i = 0; i < [arrayDomesticAnimal count]; i++) {
+        Domestic_animal *eat1 = [arrayDomesticAnimal objectAtIndex:i];
+        NSLog(@"Domestic animals eat %@",eat1.dish);
     }
+    
+    Wild_animal *wolf = [[Wolf alloc]init];
+    wolf.dish = @"hare";
+    
+        NSArray *arrayWildAnimal = [[NSArray alloc]initWithObjects:wolf, nil];
+        for (int i = 0; i < [arrayWildAnimal count]; i++) {
+            Wild_animal *eat2 = [arrayWildAnimal objectAtIndex:i];
+            NSLog(@"Wild animal eat %@",eat2.dish);
+        }
 return YES;
-}
--(void)eatSomething:(NSString *) dish
-{
-    NSLog(@"Chicken eat %@" ,dish );
-}
+
+   }
 
 @end
