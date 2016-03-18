@@ -13,17 +13,18 @@
 @synthesize name = _name;
 @synthesize age = _age;
 @synthesize weight = _weight;
+@synthesize height = _height;
 @synthesize dish = _dish;
 
--(instancetype)init
-{
-    self = [super init];
-    self.name =@"Tima";
-    self.dish = @"bread";
-    return self;
-}
+//-(instancetype)init
+//{
+//    self = [super init];
+//    self.name =@"Tima";
+//    self.dish = @"bread";
+//    return self;
+//}
 
--(void)setDish:(NSString *)dish
+-(void)eatSomething:(NSString *)dish
 {
     dish = _dish;
 }

@@ -17,6 +17,8 @@
 		2CCF57001C9536F400909E26 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF56FF1C9536F400909E26 /* Dog.m */; };
 		2CCF57031C95453C00909E26 /* Wild_animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF57021C95453C00909E26 /* Wild_animal.m */; };
 		2CCF57061C95457300909E26 /* Wolf.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF57051C95457300909E26 /* Wolf.m */; };
+		2CCF57091C9AC06B00909E26 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF57081C9AC06B00909E26 /* Cat.m */; };
+		2CCF570C1C9AC0D000909E26 /* Chicken.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF570B1C9AC0D000909E26 /* Chicken.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		2CCF57021C95453C00909E26 /* Wild_animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wild_animal.m; sourceTree = "<group>"; };
 		2CCF57041C95457300909E26 /* Wolf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wolf.h; sourceTree = "<group>"; };
 		2CCF57051C95457300909E26 /* Wolf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wolf.m; sourceTree = "<group>"; };
+		2CCF57071C9AC06B00909E26 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		2CCF57081C9AC06B00909E26 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		2CCF570A1C9AC0D000909E26 /* Chicken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chicken.h; sourceTree = "<group>"; };
+		2CCF570B1C9AC0D000909E26 /* Chicken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chicken.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,12 @@
 				2CCF57051C95457300909E26 /* Wolf.m */,
 				2CCF56FB1C94392B00909E26 /* Domestic_animal.h */,
 				2CCF56FC1C94392B00909E26 /* Domestic_animal.m */,
+				2CCF570A1C9AC0D000909E26 /* Chicken.h */,
+				2CCF570B1C9AC0D000909E26 /* Chicken.m */,
 				2CCF56FE1C9536F400909E26 /* Dog.h */,
 				2CCF56FF1C9536F400909E26 /* Dog.m */,
+				2CCF57071C9AC06B00909E26 /* Cat.h */,
+				2CCF57081C9AC06B00909E26 /* Cat.m */,
 				2CCF56E71C9437D400909E26 /* ViewController.h */,
 				2CCF56E81C9437D400909E26 /* ViewController.m */,
 				2CCF56EA1C9437D400909E26 /* Main.storyboard */,
@@ -170,12 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CCF57091C9AC06B00909E26 /* Cat.m in Sources */,
 				2CCF56E91C9437D400909E26 /* ViewController.m in Sources */,
 				2CCF56FD1C94392B00909E26 /* Domestic_animal.m in Sources */,
 				2CCF57001C9536F400909E26 /* Dog.m in Sources */,
 				2CCF56E61C9437D400909E26 /* AppDelegate.m in Sources */,
 				2CCF56E31C9437D400909E26 /* main.m in Sources */,
 				2CCF57031C95453C00909E26 /* Wild_animal.m in Sources */,
+				2CCF570C1C9AC0D000909E26 /* Chicken.m in Sources */,
 				2CCF57061C95457300909E26 /* Wolf.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

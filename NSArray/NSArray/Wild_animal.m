@@ -20,7 +20,7 @@
     return self;
 }
 
--(void)setDish:(NSString *)dish
+-(void)eatSomething:(NSString *)dish
 {
     dish = _dish;
 }

@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Domestic_animal.h"
+#import "Wild_animal.h"
+#import "Wolf.h"
+#import "Chicken.h"
 #import "Dog.h"
+#import "Cat.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
