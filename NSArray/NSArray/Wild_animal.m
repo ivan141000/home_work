@@ -10,19 +10,9 @@
 
 @implementation Wild_animal
 
-@synthesize levelOfAnger = _levelOfAnger;
-@synthesize dish = _dish;
-
-//-(instancetype)init
-//{
-//    self = [super init];
-//    self.levelOfAnger = 7;
-//    return self;
-//}
-
--(void)eatSomething:(NSString *)dish
+-(void)eatSomething
 {
-    dish = _dish;
+    NSLog(@"wild animal eat something");
 }
 
 

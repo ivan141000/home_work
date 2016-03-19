@@ -13,6 +13,6 @@
 @property(assign,nonatomic)NSInteger levelOfAnger; //from 1 to 10
 @property(strong,nonatomic)NSString * dish;
 
--(void)eatSomething:(NSString *) dish;
+-(void)eatSomething;
 
 @end

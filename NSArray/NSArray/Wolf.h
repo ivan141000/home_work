@@ -10,6 +10,6 @@
 
 @interface Wolf : Wild_animal
 
--(void)eatSomething:(NSString *)dish;
+-(void)eatSomething;
 
 @end
