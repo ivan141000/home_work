@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5249A11CA4884E00E6D5C3 /* Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5249A01CA4884E00E6D5C3 /* Lion.m */; };
+		2C5249A41CA4891100E6D5C3 /* Hare.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5249A31CA4891100E6D5C3 /* Hare.m */; };
+		2C5249A71CA4892500E6D5C3 /* Tiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5249A61CA4892500E6D5C3 /* Tiger.m */; };
+		2C5249AA1CA4894300E6D5C3 /* Panther.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5249A91CA4894300E6D5C3 /* Panther.m */; };
 		2CCF56E31C9437D400909E26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF56E21C9437D400909E26 /* main.m */; };
 		2CCF56E61C9437D400909E26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF56E51C9437D400909E26 /* AppDelegate.m */; };
 		2CCF56E91C9437D400909E26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF56E81C9437D400909E26 /* ViewController.m */; };
@@ -22,6 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C52499F1CA4884E00E6D5C3 /* Lion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lion.h; sourceTree = "<group>"; };
+		2C5249A01CA4884E00E6D5C3 /* Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lion.m; sourceTree = "<group>"; };
+		2C5249A21CA4891100E6D5C3 /* Hare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hare.h; sourceTree = "<group>"; };
+		2C5249A31CA4891100E6D5C3 /* Hare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hare.m; sourceTree = "<group>"; };
+		2C5249A51CA4892500E6D5C3 /* Tiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiger.h; sourceTree = "<group>"; };
+		2C5249A61CA4892500E6D5C3 /* Tiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiger.m; sourceTree = "<group>"; };
+		2C5249A81CA4894300E6D5C3 /* Panther.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Panther.h; sourceTree = "<group>"; };
+		2C5249A91CA4894300E6D5C3 /* Panther.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Panther.m; sourceTree = "<group>"; };
 		2CCF56DE1C9437D400909E26 /* NSArray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSArray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCF56E21C9437D400909E26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CCF56E41C9437D400909E26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +90,14 @@
 			children = (
 				2CCF56E41C9437D400909E26 /* AppDelegate.h */,
 				2CCF56E51C9437D400909E26 /* AppDelegate.m */,
+				2C52499F1CA4884E00E6D5C3 /* Lion.h */,
+				2C5249A01CA4884E00E6D5C3 /* Lion.m */,
+				2C5249A21CA4891100E6D5C3 /* Hare.h */,
+				2C5249A31CA4891100E6D5C3 /* Hare.m */,
+				2C5249A51CA4892500E6D5C3 /* Tiger.h */,
+				2C5249A61CA4892500E6D5C3 /* Tiger.m */,
+				2C5249A81CA4894300E6D5C3 /* Panther.h */,
+				2C5249A91CA4894300E6D5C3 /* Panther.m */,
 				2CCF57011C95453C00909E26 /* Wild_animal.h */,
 				2CCF57021C95453C00909E26 /* Wild_animal.m */,
 				2CCF57041C95457300909E26 /* Wolf.h */,
@@ -185,10 +205,14 @@
 				2CCF56FD1C94392B00909E26 /* Domestic_animal.m in Sources */,
 				2CCF57001C9536F400909E26 /* Dog.m in Sources */,
 				2CCF56E61C9437D400909E26 /* AppDelegate.m in Sources */,
+				2C5249A11CA4884E00E6D5C3 /* Lion.m in Sources */,
 				2CCF56E31C9437D400909E26 /* main.m in Sources */,
 				2CCF57031C95453C00909E26 /* Wild_animal.m in Sources */,
+				2C5249AA1CA4894300E6D5C3 /* Panther.m in Sources */,
 				2CCF570C1C9AC0D000909E26 /* Chicken.m in Sources */,
+				2C5249A71CA4892500E6D5C3 /* Tiger.m in Sources */,
 				2CCF57061C95457300909E26 /* Wolf.m in Sources */,
+				2C5249A41CA4891100E6D5C3 /* Hare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +359,7 @@
 				2CCF56F71C9437D400909E26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

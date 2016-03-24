@@ -13,6 +13,10 @@
 #import "Cat.h"
 #import "Wild_animal.h"
 #import "Wolf.h"
+#import "Lion.h"
+#import "Hare.h"
+#import "Tiger.h"
+#import "Panther.h"
 
 @interface AppDelegate ()
 
@@ -23,71 +27,47 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //Domestic_animal *chicken = [[Chicken alloc]init];
+    
     Dog *dog = [[Dog alloc]init];
     Cat *cat = [[Cat alloc]init];
+    Chicken *chicken = [[Chicken alloc] init];
+    Wolf *wolf = [[Wolf alloc]init];
+    Lion *lion = [[Lion alloc]init];
+    Hare *hare = [[Hare alloc]init];
+    Tiger *tiger = [[Tiger alloc]init];
+    Panther *panther = [[Panther alloc]init];
     
-    
-    Chicken *chicken2 = [[Chicken alloc] init];
-    chicken2.name = @"Raba";
-    chicken2.age = 1;
-    chicken2.weight = 12.5f;
-    chicken2.dish = @"corn";
-    
-    Chicken *chicken3 = [[Chicken alloc] init];
-    chicken3.name = @"Euro";
-    chicken3.age = 1;
-    chicken3.weight = 15.5f;
-    chicken3.dish = @"corn";
-    
-    Chicken *chicken4 = [[Chicken alloc] init];
-    chicken4.name = @"usa";
-    chicken4.age = 1;
-    chicken4.weight = 10.5f;
-    chicken4.dish = @"corn";
 
     
     
-//    chicken.dish = @"corn";
-//    dog.dish = @"meat";
-//    cat.dish = @"fish";
-//    NSLog(@"Chichen eat %@",chicken.dish);
-//    NSLog(@"Dog eat %@",dog.dish);
-//    NSLog(@"Cat eat %@",cat.dish);
-//    
-//    
-//    NSArray *arrayDomesticAnimal = [[NSArray alloc]initWithObjects:dog,chicken2,cat,chicken3,chicken4, nil];
-//    for (int i = 0; i < [arrayDomesticAnimal count]; i++) {
-//        Domestic_animal *animal = [arrayDomesticAnimal objectAtIndex:i];
-//        NSLog(@"name animal %@", animal.name);
-//        NSLog(@"age animal %li", animal.age);
-//        NSLog(@"weight animal %f", animal.weight);
-//        [animal eatSomething];
-//        //[animal eatSomething:@"corm"];
-//        if ([animal isKindOfClass:[Chicken class]]) {
-//            NSLog(@"I want fly");
-//        }
-//        
-//        if ([animal isKindOfClass:[Dog class]]) {
-//            NSLog(@"I'm dog and say gaf gaf");
-//        }
-//        
-//    }
+    NSArray *arrayDomesticAnimal = [[NSArray alloc]initWithObjects:dog,chicken,cat, nil];
     
-    Wolf *wolf = [[Wolf alloc]init];
-    wolf.levelOfAnger = 7;
-    wolf.dish = @"hare";
+    NSArray *arrayWildAnimal = [[NSArray alloc]initWithObjects:wolf,lion,hare,tiger,panther, nil];
     
-    NSArray *animals = [[NSArray alloc]initWithObjects:dog,cat,wolf,chicken3, nil];
-    for (int i = 0; i < [animals count]; i++) {
-        Wild_animal *animal = [animals objectAtIndex:i];
-        [animal eatSomething];
-        
-        if ([animal isKindOfClass:[Wolf class]]) {
-            NSLog(@"wolf levelOfAnger : %li", animal.levelOfAnger);
-        }
-        
+        NSInteger maxCount;
+    if ([arrayDomesticAnimal count] > [arrayWildAnimal count]) {
+        maxCount = [arrayDomesticAnimal count];
+    }else{
+        maxCount = [arrayWildAnimal count];
     }
+    
+    for (NSInteger i = 0; i < maxCount; i++) {
+        if (i < [arrayDomesticAnimal count]) {
+            Domestic_animal *animal = [arrayDomesticAnimal objectAtIndex:i];
+            [animal eatSomething];
+            NSLog(@"name animal : %@", animal.name);
+            NSLog(@"age animal : %li", animal.age);
+            NSLog(@"weight animal : %f", animal.weight);
+
+        }
+        if (i < [arrayWildAnimal count]) {
+            Wild_animal *animal = [arrayWildAnimal objectAtIndex:i];
+            [animal eatSomething];
+            NSLog(@"levelOfAnger : %li", animal.levelOfAnger);
+        }
+    }
+    
+    NSArray *allAnimals = [[NSArray alloc]initWithObjects:dog,wolf,chicken,lion,cat,hare,tiger,panther, nil];
     
     
     return YES;

@@ -20,7 +20,7 @@
 }
 -(void)eatSomething
 {
-    [super eatSomething];
+    //[super eatSomething];
     NSLog(@"Wolf eat: %@ ",self.dish);
 }
 

@@ -15,13 +15,13 @@
     self = [super init];
     self.name = @"Raba";
     self.age = 1;
-    self.weight = 12.5;
+    self.weight = 4.5;
     self.dish = @"corn";
     return self;
 }
 -(void)eatSomething
 {
-    [super eatSomething];
+    //[super eatSomething];
     NSLog(@"Chicken eat: %@ ",self.dish);
     
 }
