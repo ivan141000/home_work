@@ -16,7 +16,7 @@
 @property(assign,nonatomic)CGFloat height;
 @property(strong,nonatomic)NSString *dish;
 
--(void)eatSomething:(NSString *)dish;
+-(void)eatSomething;
 
 
 

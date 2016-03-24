@@ -19,9 +19,12 @@
     self.dish = @"corn";
     return self;
 }
--(void)eatSomething:(NSString *)dish
+-(void)eatSomething
 {
+    [super eatSomething];
     NSLog(@"Chicken eat: %@ ",self.dish);
+    
 }
+
 
 @end
