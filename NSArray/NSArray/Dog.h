@@ -10,6 +10,6 @@
 
 @interface Dog : Domestic_animal
 
--(void)eatSomething;
+-(void)eatSomething:(NSString *)dish;
 
 @end

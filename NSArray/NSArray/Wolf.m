@@ -18,9 +18,8 @@
     self.dish = @"hare";
     return self;
 }
--(void)eatSomething
+-(void)eatSomething:(NSString *)dish
 {
-    [super eatSomething];
     NSLog(@"Wolf eat: %@ ",self.dish);
 }
 

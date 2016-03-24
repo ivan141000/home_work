@@ -10,9 +10,23 @@
 
 @implementation Domestic_animal
 
--(void)eatSomething
+@synthesize name = _name;
+@synthesize age = _age;
+@synthesize weight = _weight;
+@synthesize height = _height;
+@synthesize dish = _dish;
+
+//-(instancetype)init
+//{
+//    self = [super init];
+//    self.name =@"Tima";
+//    self.dish = @"bread";
+//    return self;
+//}
+
+-(void)eatSomething:(NSString *)dish
 {
-    NSLog(@"animal eat somthing");
+    dish = _dish;
 }
 
 @end

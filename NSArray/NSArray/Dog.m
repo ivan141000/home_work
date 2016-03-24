@@ -20,7 +20,7 @@
     self.dish = @"meat";
     return self;
 }
--(void)eatSomething
+-(void)eatSomething:(NSString *)dish
 {
     NSLog(@"Dog eat: %@ ",self.dish);
 }

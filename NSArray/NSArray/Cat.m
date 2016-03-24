@@ -21,7 +21,7 @@
     return self;
 }
 
--(void)eatSomething
+-(void)eatSomething:(NSString *)dish
 {
     NSLog(@"Cat eat: %@ ",self.dish);
 }
