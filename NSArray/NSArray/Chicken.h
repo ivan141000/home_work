@@ -6,7 +6,7 @@
 //  Copyright © 2016 Myai. All rights reserved.
 //
 
-#import "Domestic_animal.h"
+#import "DomesticAnimal.h"
 
 @interface Chicken : Domestic_animal
 

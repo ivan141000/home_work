@@ -7,11 +7,11 @@
 //
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "Domestic_animal.h"
+#import "DomesticAnimal.h"
 #import "Chicken.h"
 #import "Dog.h"
 #import "Cat.h"
-#import "Wild_animal.h"
+#import "WildAnimal.h"
 #import "Wolf.h"
 #import "Lion.h"
 #import "Hare.h"
@@ -23,6 +23,7 @@
 @end
 
 @implementation AppDelegate
+@synthesize techList;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -70,8 +71,32 @@
     NSArray *allAnimals = [[NSArray alloc]initWithObjects:dog,wolf,chicken,lion,cat,hare,tiger,panther, nil];
     
     
-    return YES;
+    NSSortDescriptor *descriptionName = [[NSSortDescriptor alloc]initWithKey:@"name" ascending:YES];
+    
+    NSArray *arrDescription = [[NSArray alloc] initWithObjects:descriptionName, nil];
+    allAnimals = [allAnimals sortedArrayUsingDescriptors:arrDescription];
+    
+    NSLog(@"allAnimals = %@",allAnimals);
+    
+    allAnimals = [self sortArrayByTypeOfAnimal:allAnimals];
+    NSLog(@"Finally sorting %@",allAnimals);
+       return YES;
 
    }
+
+-(NSArray*)sortArrayByTypeOfAnimal:(NSArray *)array
+{
+    NSArray *arrayDomestic = [[NSArray alloc]init];
+    NSArray *arrayWild = [[NSArray alloc]init];
+    for (NSInteger i = 0; i < [array count]; i++) {
+        if ([[array objectAtIndex:i] isKindOfClass:[Domestic_animal class]]) {
+            arrayDomestic = [arrayDomestic arrayByAddingObject: [array objectAtIndex:i]];
+        }else if([[array objectAtIndex:i] isKindOfClass:[Wild_animal class]]){
+            arrayWild = [arrayWild arrayByAddingObject:[array objectAtIndex:i]];
+        }
+    }
+    array = [arrayDomestic arrayByAddingObjectsFromArray:arrayWild];
+    return array;
+}
 
 @end

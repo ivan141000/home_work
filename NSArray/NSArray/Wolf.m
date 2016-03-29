@@ -7,7 +7,7 @@
 //
 
 #import "Wolf.h"
-#import "Wild_animal.h"
+#import "WildAnimal.h"
 
 @implementation Wolf
 
@@ -16,6 +16,7 @@
     self = [super init];
     self.levelOfAnger = 7;
     self.dish = @"hare";
+    self.name =@"Akela";
     return self;
 }
 -(void)eatSomething

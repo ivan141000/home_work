@@ -15,6 +15,7 @@
     self = [super init];
     self.levelOfAnger = 5;
     self.dish = @"meat";
+    self.name = @"Leon";
     return self;
 }
 -(void)eatSomething

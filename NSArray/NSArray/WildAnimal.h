@@ -10,6 +10,7 @@
 @import CoreGraphics;
 @interface Wild_animal : NSObject
 
+@property(strong,nonatomic)NSString *name;
 @property(assign,nonatomic)NSInteger levelOfAnger; //from 1 to 10
 @property(strong,nonatomic)NSString * dish;
 

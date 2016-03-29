@@ -6,7 +6,7 @@
 //  Copyright © 2016 Myai. All rights reserved.
 //
 
-#import "Wild_animal.h"
+#import "WildAnimal.h"
 
 @interface Wolf : Wild_animal
 

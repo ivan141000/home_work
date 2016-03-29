@@ -17,9 +17,9 @@
 		2CCF56EC1C9437D400909E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF56EA1C9437D400909E26 /* Main.storyboard */; };
 		2CCF56EE1C9437D400909E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF56ED1C9437D400909E26 /* Assets.xcassets */; };
 		2CCF56F11C9437D400909E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF56EF1C9437D400909E26 /* LaunchScreen.storyboard */; };
-		2CCF56FD1C94392B00909E26 /* Domestic_animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF56FC1C94392B00909E26 /* Domestic_animal.m */; };
+		2CCF56FD1C94392B00909E26 /* DomesticAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF56FC1C94392B00909E26 /* DomesticAnimal.m */; };
 		2CCF57001C9536F400909E26 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF56FF1C9536F400909E26 /* Dog.m */; };
-		2CCF57031C95453C00909E26 /* Wild_animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF57021C95453C00909E26 /* Wild_animal.m */; };
+		2CCF57031C95453C00909E26 /* WildAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF57021C95453C00909E26 /* WildAnimal.m */; };
 		2CCF57061C95457300909E26 /* Wolf.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF57051C95457300909E26 /* Wolf.m */; };
 		2CCF57091C9AC06B00909E26 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF57081C9AC06B00909E26 /* Cat.m */; };
 		2CCF570C1C9AC0D000909E26 /* Chicken.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF570B1C9AC0D000909E26 /* Chicken.m */; };
@@ -44,12 +44,12 @@
 		2CCF56ED1C9437D400909E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CCF56F01C9437D400909E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CCF56F21C9437D400909E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CCF56FB1C94392B00909E26 /* Domestic_animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Domestic_animal.h; sourceTree = "<group>"; };
-		2CCF56FC1C94392B00909E26 /* Domestic_animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Domestic_animal.m; sourceTree = "<group>"; };
+		2CCF56FB1C94392B00909E26 /* DomesticAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomesticAnimal.h; sourceTree = "<group>"; };
+		2CCF56FC1C94392B00909E26 /* DomesticAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomesticAnimal.m; sourceTree = "<group>"; };
 		2CCF56FE1C9536F400909E26 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		2CCF56FF1C9536F400909E26 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
-		2CCF57011C95453C00909E26 /* Wild_animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wild_animal.h; sourceTree = "<group>"; };
-		2CCF57021C95453C00909E26 /* Wild_animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wild_animal.m; sourceTree = "<group>"; };
+		2CCF57011C95453C00909E26 /* WildAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WildAnimal.h; sourceTree = "<group>"; };
+		2CCF57021C95453C00909E26 /* WildAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WildAnimal.m; sourceTree = "<group>"; };
 		2CCF57041C95457300909E26 /* Wolf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wolf.h; sourceTree = "<group>"; };
 		2CCF57051C95457300909E26 /* Wolf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wolf.m; sourceTree = "<group>"; };
 		2CCF57071C9AC06B00909E26 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
@@ -98,12 +98,12 @@
 				2C5249A61CA4892500E6D5C3 /* Tiger.m */,
 				2C5249A81CA4894300E6D5C3 /* Panther.h */,
 				2C5249A91CA4894300E6D5C3 /* Panther.m */,
-				2CCF57011C95453C00909E26 /* Wild_animal.h */,
-				2CCF57021C95453C00909E26 /* Wild_animal.m */,
+				2CCF57011C95453C00909E26 /* WildAnimal.h */,
+				2CCF57021C95453C00909E26 /* WildAnimal.m */,
 				2CCF57041C95457300909E26 /* Wolf.h */,
 				2CCF57051C95457300909E26 /* Wolf.m */,
-				2CCF56FB1C94392B00909E26 /* Domestic_animal.h */,
-				2CCF56FC1C94392B00909E26 /* Domestic_animal.m */,
+				2CCF56FB1C94392B00909E26 /* DomesticAnimal.h */,
+				2CCF56FC1C94392B00909E26 /* DomesticAnimal.m */,
 				2CCF570A1C9AC0D000909E26 /* Chicken.h */,
 				2CCF570B1C9AC0D000909E26 /* Chicken.m */,
 				2CCF56FE1C9536F400909E26 /* Dog.h */,
@@ -202,12 +202,12 @@
 			files = (
 				2CCF57091C9AC06B00909E26 /* Cat.m in Sources */,
 				2CCF56E91C9437D400909E26 /* ViewController.m in Sources */,
-				2CCF56FD1C94392B00909E26 /* Domestic_animal.m in Sources */,
+				2CCF56FD1C94392B00909E26 /* DomesticAnimal.m in Sources */,
 				2CCF57001C9536F400909E26 /* Dog.m in Sources */,
 				2CCF56E61C9437D400909E26 /* AppDelegate.m in Sources */,
 				2C5249A11CA4884E00E6D5C3 /* Lion.m in Sources */,
 				2CCF56E31C9437D400909E26 /* main.m in Sources */,
-				2CCF57031C95453C00909E26 /* Wild_animal.m in Sources */,
+				2CCF57031C95453C00909E26 /* WildAnimal.m in Sources */,
 				2C5249AA1CA4894300E6D5C3 /* Panther.m in Sources */,
 				2CCF570C1C9AC0D000909E26 /* Chicken.m in Sources */,
 				2C5249A71CA4892500E6D5C3 /* Tiger.m in Sources */,

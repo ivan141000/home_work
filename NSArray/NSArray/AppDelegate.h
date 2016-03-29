@@ -11,8 +11,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-
-
+@property (retain, nonatomic) NSArray *techList;
+-(void)sortUsingDescriptors:(NSArray *)sortDescriptors;
 @end
 
