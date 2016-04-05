@@ -8,7 +8,7 @@
 
 #import "WildAnimal.h"
 
-@interface Wolf : Wild_animal
+@interface Wolf : WildAnimal
 
 -(void)eatSomething;
 

@@ -8,7 +8,7 @@
 
 #import "DomesticAnimal.h"
 
-@implementation Domestic_animal
+@implementation DomesticAnimal
 
 -(void)eatSomething
 {

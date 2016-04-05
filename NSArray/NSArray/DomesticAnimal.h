@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 @import CoreGraphics;
-@interface Domestic_animal : NSObject
+@interface DomesticAnimal : NSObject
 
 @property(strong,nonatomic)NSString *name;
 @property(assign,nonatomic)NSInteger age;
 @property(assign,nonatomic)CGFloat weight;
 @property(assign,nonatomic)CGFloat height;
 @property(strong,nonatomic)NSString *dish;
+@property(assign,nonatomic)BOOL domestic;
 
 -(void)eatSomething;
 

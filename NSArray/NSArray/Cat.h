@@ -8,7 +8,7 @@
 
 #import "DomesticAnimal.h"
 
-@interface Cat : Domestic_animal
+@interface Cat : DomesticAnimal
 
 -(void)eatSomething;
 @end

@@ -17,6 +17,7 @@
     self.levelOfAnger = 7;
     self.dish = @"hare";
     self.name =@"Akela";
+    self.wild = YES;
     return self;
 }
 -(void)eatSomething
