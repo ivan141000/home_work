@@ -24,29 +24,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    CGRect ship = CGRectMake(1, 1, 2, 2);
+    CGRect ship = CGRectMake(1, 1, 44, 9);
 //    CGPoint CGPointAdd(CGPoint p1, CGPoint p2, CGPoint p3, CGPoint p4, CGPoint p5)
 //    {
 //        return CGPointMake(arc4random()%6, arc4random()%6);
 //    }
-   CGPoint point1 = CGPointMake(arc4random()%6, arc4random()%6);
-    CGPoint point2 = CGPointMake(arc4random()%6, arc4random()%6);
-    CGPoint point3 = CGPointMake(arc4random()%6, arc4random()%6);
-    CGPoint point4 = CGPointMake(arc4random()%6, arc4random()%6);
-    CGPoint point5 = CGPointMake(arc4random()%6, arc4random()%6);
-//    Points point1 = CGPointMake(arc4random()%6, arc4random()%6);
-//    Points point2 = CGPointMake(arc4random()%6, arc4random()%6);
-//    Points point3 = CGPointMake(arc4random()%6, arc4random()%6);
-//    Points point4 = CGPointMake(arc4random()%6, arc4random()%6);
-//    Points point5 = CGPointMake(arc4random()%6, arc4random()%6);
+    NSArray *arr = [[NSArray alloc]init];
+    arr = [self pointsCreate];
     
-    //NSArray *points = [[NSArray alloc]initWithObjects:point1,point2,point3,point4,point5, nil];
+    [self shipFight:arr shipSetObject:&ship];
+    NSLog(@"%@",NSStringFromCGRect(ship));
     
-    for (NSInteger i = 0; i < 6; i++) {
-        NSLog(@"The resulf of the shot = %@",CGRectContainsPoint(ship, point1) ? @"Hit" : @"Past");
-    }
     return YES;
+    
 }
 
+-(NSArray*)pointsCreate{
 
+    NSArray *arr = [[NSArray alloc]init];
+    for (NSInteger t = 0; t < 6; t++) {
+        CGPoint point = CGPointMake(arc4random()%10, arc4random()%2);
+        NSValue *valuePoint = [NSValue valueWithCGPoint:point];
+        arr = [arr arrayByAddingObject:valuePoint];
+    }
+
+    return arr ;
+}
+
+-(void)shipFight:(NSArray*)arr shipSetObject:(CGRect *)ship
+{
+    
+    for (NSInteger i = 0; i < [arr count]; i++) {
+        
+        NSValue *valuePoint = [arr objectAtIndex:i];
+        NSLog(@"%@",NSStringFromCGPoint(valuePoint.CGPointValue));
+        NSLog(@"The resulf of the shot = %@",CGRectContainsPoint(*ship,valuePoint.CGPointValue) ? @"Hit" : @"Past");
+        
+        *ship = CGRectMake(0, 10, 30, 20);
+    }
+ 
+}
 @end

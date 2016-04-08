@@ -13,7 +13,6 @@
 		2C3394761CB5D1E300B1A129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3394741CB5D1E300B1A129 /* Main.storyboard */; };
 		2C3394781CB5D1E300B1A129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3394771CB5D1E300B1A129 /* Assets.xcassets */; };
 		2C33947B1CB5D1E300B1A129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3394791CB5D1E300B1A129 /* LaunchScreen.storyboard */; };
-		2C3394841CB5D2B900B1A129 /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3394831CB5D2B900B1A129 /* Ship.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +26,6 @@
 		2C3394771CB5D1E300B1A129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C33947A1CB5D1E300B1A129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C33947C1CB5D1E300B1A129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C3394821CB5D2B900B1A129 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
-		2C3394831CB5D2B900B1A129 /* Ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ship.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +60,6 @@
 			children = (
 				2C33946E1CB5D1E300B1A129 /* AppDelegate.h */,
 				2C33946F1CB5D1E300B1A129 /* AppDelegate.m */,
-				2C3394821CB5D2B900B1A129 /* Ship.h */,
-				2C3394831CB5D2B900B1A129 /* Ship.m */,
 				2C3394711CB5D1E300B1A129 /* ViewController.h */,
 				2C3394721CB5D1E300B1A129 /* ViewController.m */,
 				2C3394741CB5D1E300B1A129 /* Main.storyboard */,
@@ -156,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C3394731CB5D1E300B1A129 /* ViewController.m in Sources */,
-				2C3394841CB5D2B900B1A129 /* Ship.m in Sources */,
 				2C3394701CB5D1E300B1A129 /* AppDelegate.m in Sources */,
 				2C33946D1CB5D1E300B1A129 /* main.m in Sources */,
 			);
