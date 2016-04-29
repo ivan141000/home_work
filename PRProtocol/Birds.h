@@ -10,9 +10,11 @@
 
 @protocol Birds <NSObject>
 
+@required
 -(void)fly;
 
 @optional
+-(void)talk;
 @property(strong,nonatomic)NSString* name;
 
 

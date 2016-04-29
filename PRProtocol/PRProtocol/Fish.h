@@ -13,6 +13,7 @@
 -(void)swim;
 
 @optional
+-(void)kqa;
 @property(strong,nonatomic)NSString* name;
 
 

@@ -11,7 +11,6 @@
 @interface PRDove : NSObject <Birds>
 
 -(void)fly;
-
-@property(strong,nonatomic)NSString* name;
+-(void)talk;
 
 @end

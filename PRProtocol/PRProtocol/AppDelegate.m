@@ -33,14 +33,27 @@
     
     for (id animal in listAnimals) {
         [animal setName:@"name"];
-        if ([animal respondsToSelector:@selector(fly)]) {
+        
+        if ([animal conformsToProtocol:@protocol(Birds)]) { //проверку на поддержку протокола
+            id bird = animal; //указать, что эта переменная поддерживает протокол
             [animal fly];
+            if([bird respondsToSelector:@selector(talk)]) {
+                [bird talk];
+            }
         }
-        if ([animal respondsToSelector:@selector(swim)]) {
+        
+        else if ([animal conformsToProtocol:@protocol(Fish)]) {
+            id fish = animal;
             [animal swim];
+            if ([fish respondsToSelector:@selector(kqa)]) {
+                [fish kqa];
+            }
         }
-        if ([animal respondsToSelector:@selector(walk)]) {
-            [animal walk];}
+        else if ([animal respondsToSelector:@selector(walk)]) {
+            [animal walk];
+        }else{ NSLog(@"This animal is lazybones");
+        }
+         // проверить ленивца на то, что он не выполняет ни один из выше указанных протоколов
         NSLog(@"list animal = %@",animal);
         }
     return YES;
