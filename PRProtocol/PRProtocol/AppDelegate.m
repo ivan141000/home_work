@@ -32,26 +32,33 @@
     NSArray *listAnimals = [NSArray arrayWithObjects:cock,dove,perch,mackerel,tiger,lazybones, nil];
     
     for (id animal in listAnimals) {
-        [animal setName:@"name"];
         
-        if ([animal conformsToProtocol:@protocol(Birds)]) { //проверку на поддержку протокола
-            id bird = animal; //указать, что эта переменная поддерживает протокол
-            [animal fly];
+        if ([animal conformsToProtocol:@protocol(Birds)]) { //проверку на поддержку протокола     //1
+            id <Birds>bird = animal; //указать, что эта переменная поддерживает протокол
+            [bird fly];
             if([bird respondsToSelector:@selector(talk)]) {
                 [bird talk];
+                [bird setName:@"name"];
+                
             }
         }
         
-        else if ([animal conformsToProtocol:@protocol(Fish)]) {
+         if ([animal conformsToProtocol:@protocol(Fish)]) {
             id fish = animal;
             [animal swim];
             if ([fish respondsToSelector:@selector(kqa)]) {
                 [fish kqa];
             }
         }
-        else if ([animal respondsToSelector:@selector(walk)]) {
+         if ([animal conformsToProtocol:@protocol(Mammals)]) {
             [animal walk];
-        }else{ NSLog(@"This animal is lazybones");
+        }
+        if(![animal conformsToProtocol:@protocol(Birds)]&&
+           ![animal conformsToProtocol:@protocol(Fish)] &&
+           ![animal conformsToProtocol:@protocol(Mammals)])
+        {
+            NSLog(@"This animal is lazybones");
+            
         }
          // проверить ленивца на то, что он не выполняет ни один из выше указанных протоколов
         NSLog(@"list animal = %@",animal);

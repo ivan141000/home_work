@@ -11,11 +11,20 @@
 @implementation PRCock
 
 @synthesize name;
+
 -(void)fly{
-    NSLog(@"can fly");}
+    NSLog(@"can fly");
+}
+
+-(void)setName:(NSString *)name
+{
+    NSLog(@"name = %@",name);
+}
 
 -(instancetype)init{
     self.name = @"Kekyriky";
+    
     return self;
 }
+
 @end
