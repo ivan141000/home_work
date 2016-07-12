@@ -8,6 +8,14 @@
 
 #import "BLStudent.h"
 
+typedef void(^MarkBlock)(void);
+
 @implementation BLStudent
+
+-(void)giveMarkbook:(MarkBlock)markBlock{
+
+    NSLog(@"give");
+}
+
 
 @end
