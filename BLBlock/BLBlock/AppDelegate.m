@@ -69,7 +69,6 @@ typedef void(^MarkBlock)(void);
         student1.averageMark = (([student1.marks objectAtIndex:0] + [student1.marks objectAtIndex:1] +
         [student1.marks objectAtIndex:2])/3);
     };
-
     
     NSArray *sortedStudents = [students sortedArrayUsingComparator:^NSComparisonResult(BLStudent *student1 , BLStudent *student2){
         return (NSComparisonResult)[student1.name compare:student2.name] &&[student1.surname compare:student2.surname];
