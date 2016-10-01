@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TableViewController.h"
+#import "DetailViewController.h"
 
 @interface AppDelegate ()
 

@@ -26,8 +26,7 @@
     self.view.backgroundColor = [UIColor orangeColor ];
 
 
-    self.pointsPlan = [NSMutableArray arrayWithObjects:@"Tom", @"Bill", @"Tom", @"Joe", @"Tom", nil];
-    
+        
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -83,20 +82,25 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+//#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+//#warning Incomplete implementation, return the number of rows
     return [pointsPlan count];
 }
 
 -(void)addPlusButton{
-    UINavigationItem *plusItem = [[UINavigationItem alloc]init];
-    UIBarButtonItem *plusButton = [[UIBarButtonItem alloc]initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(plusButton)];
-    [plusItem setRightBarButtonItem:plusButton];
     
+    UIBarButtonItem *plusButton = [[UIBarButtonItem alloc]initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(pushButtonPlus)];
+    [self.navigationItem setRightBarButtonItem:plusButton animated:YES] ;
+    [self becomeFirstResponder];
+}
+
+-(void)pushButtonPlus{
+    DetailViewController *detailViewController = [[DetailViewController alloc]init];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 
@@ -104,11 +108,11 @@
     UIToolbar *toolbar = [[UIToolbar alloc] init];
     toolbar.frame = CGRectMake(0, 518, 320, 50);
     
-    UIBarButtonItem *buttonAll = [[UIBarButtonItem alloc] initWithTitle:@"All" style:UIBarButtonItemStylePlain target:self action:@selector(allAction)];
+    UIBarButtonItem *buttonAll = [[UIBarButtonItem alloc] initWithTitle:@"All" style:UIBarButtonItemStylePlain target:self action:@selector(pushButtonAll)];
     buttonAll.width = 20.0f;
-    UIBarButtonItem *buttonActive=[[UIBarButtonItem alloc]initWithTitle:@"Active" style:UIBarButtonItemStylePlain target:self action:@selector(activeAction)];
+    UIBarButtonItem *buttonActive=[[UIBarButtonItem alloc]initWithTitle:@"Active" style:UIBarButtonItemStylePlain target:self action:@selector(pushButtonActive)];
     buttonActive.width = 100.0f;
-    UIBarButtonItem *buttonCompleted = [[UIBarButtonItem alloc] initWithTitle:@"Completed" style:UIBarButtonItemStylePlain target:self action:@selector(completedAction)];
+    UIBarButtonItem *buttonCompleted = [[UIBarButtonItem alloc] initWithTitle:@"Completed" style:UIBarButtonItemStylePlain target:self action:@selector(pushButtonCompleted)];
     buttonAll.width = 80.0f;
 
     [toolbar setItems:[[NSArray alloc] initWithObjects:buttonAll,buttonActive,buttonCompleted, nil]];
@@ -116,13 +120,18 @@
 
 }
 
-//-(IBAction)toolBarItem1:(id)sender{
-//    [label setText:@"Tool 1 Selected"];
-//}
-//
-//-(IBAction)toolBarItem2:(id)sender{
-//    [label setText:@"Tool 2 Selected"];
-//}
+
+-(void)pushButtonAll{
+    NSLog(@"all");
+}
+
+-(void)pushButtonActive{
+    NSLog(@"active");
+}
+-(void)pushButtonCompleted{
+    NSLog(@"completed");
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
